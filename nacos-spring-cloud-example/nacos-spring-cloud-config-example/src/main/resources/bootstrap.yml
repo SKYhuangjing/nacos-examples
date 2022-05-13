@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: example
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: business_group_${spring.profiles.active}
+        file-extension: yaml
